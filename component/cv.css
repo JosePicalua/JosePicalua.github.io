@@ -1,0 +1,870 @@
+body {
+    background: linear-gradient(to right, #E6F0DC, #A8C69F);
+
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    padding: 20px;
+}
+
+.perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.descripcion_perfil {
+    font-style: italic;
+    margin-left: 175px;
+    margin-top: -140px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    font-size: 25px;
+}
+
+.antonyPicalua {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px; /* Intermediate separation */
+    
+}
+.correo, .repositorio, .numero-telefono, .repositorio, .perfil-trabajo{
+    border-bottom: 4px solid #A8C69F; /* Cambia el color según tu diseño */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil debajo */
+}
+a.repositorio, a.perfil-trabajo {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+a.repositorio:hover, a.perfil-trabajo:hover {
+    text-decoration: underline;
+}
+
+.correo {
+    margin-bottom: 5px; /* Intermediate separation */
+    display: flex;
+    align-items: center;
+    max-width: 330px; /* Ajusta según el espacio disponible */
+    height: 40px; /* Ajusta según el diseño */
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+
+}
+
+.numero-telefono {
+    margin-bottom: 5px; /* Intermediate separation */
+    display: flex;
+    align-items: center;
+    max-width: 250px; /* Ajusta según el espacio disponible */
+    height: 40px; /* Ajusta según el diseño */
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+
+a.repositorio, a.perfil-trabajo {
+    display: flex;
+    align-items: center;
+    max-width: 200px; /* Ajusta según el espacio disponible */
+    height: 40px; /* Ajusta según el diseño */
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+.grafica {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-left: 10px; /* Space between text and image */
+}
+
+.icon {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* ==============================
+   NOTIFICACION DE COPIADO
+================================= */
+
+
+
+
+
+/* ==============================
+   CONTEXTO DE DATA ANALISIS
+================================= */
+.data_analytics_container {
+    position: absolute;
+    right: 0;
+    top: 0; /* Added to ensure it starts from the top of its containing element */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    width: 100%; /* Ensures it spans the full width */
+    max-width: 100%; /* Prevents overflow */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    pointer-events: none; /* Optional: prevents this container from interfering with clicks */
+}
+
+.data_analitica_Data {
+    font-size: 70px;
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 1;
+    line-break: 1; /* Tightens line spacing */
+}
+
+.data_analitica_Analytics {
+    font-size: 65px;
+    margin-top: 8px; /* Maintains the overlapping effect */
+    line-height: 1; /* Tightens line spacing */
+}
+
+/* ==============================
+   TEXTO DE IDIOMAS 
+================================= */
+
+.global_idioma {
+    margin-top: 40px;
+    font-size: 21px;
+    display: flex;
+    gap: 10px 20px;
+}
+
+.language-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.language-details:nth-child(1) {
+    background-color: #4CAF50; /* Verde para Español */
+    color: white;
+    border: 2px solid #45a049;
+}
+
+.language-details:nth-child(2) {
+    background-color: #2196F3; /* Azul para Inglés */
+    color: white;
+    border: 2px solid #1E88E5;
+}
+
+.language-details:nth-child(3) {
+    background-color: #FF9800; /* Naranja para Portugués */
+    color: white;
+    border: 2px solid #F57C00;
+}
+
+.language-details:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.language-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.language-level {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+
+/* =============================
+   MDOAL DE SECCIONES
+================================= */
+
+.div_secciones {
+    margin-top: -300px;
+    margin-left: 190px;
+    width: 880px;
+    height: 300px;
+    padding: 2%;
+    border-radius: 4%;
+    border-bottom: 6px solid #A8C69F;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.image_detalles {
+    display: flex;
+    flex-direction: 1;
+    width: 150px;
+    height: 300px;
+    padding-left: -20px;
+    margin-left: 30px;
+    flex-wrap: nowrap;
+}
+
+.image_detalles img {
+    width: 100px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s ease;
+}
+
+
+.image_detalles img:hover {
+    cursor: pointer;
+    width: 300px;
+    opacity: 2;
+    filter: contrast(120%);
+    z-index: 30;
+}
+
+
+.menu-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 20px;
+    transition: all 0.2s ease;
+    background-color: rgba(255, 0, 0, 0.3); /* Rojo suave */
+    border-radius: 5px;
+
+}
+
+/* Cuando la imagen está en hover, cambia a verde */
+.image_detalles img:hover + .menu-text {
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+/* ==============================
+   ESTILOS GENERALES DEL MODAL
+================================= */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Evita que el contenido se desborde en pantallas pequeñas */
+}
+
+/* ==============================
+   CONTENEDOR DEL MODAL
+================================= */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+/* ==============================
+   BOTÓN DE CERRAR
+================================= */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.close-modal:hover {
+    color: red;
+}
+
+/* ==============================
+   ANIMACIÓN DEL MODAL
+================================= */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==============================
+   MODAL ESPECÍFICO: APTITUDES
+================================= */
+#modalAptitudes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cubre toda la pantalla */
+    height: 100%; /* Cubre toda la pantalla */
+    background: rgba(0, 0, 0, 0.6); /* Fondo negro transparente */
+    display: none;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    
+    /* Centra el contenido del modal */
+
+    justify-content: center;
+    align-items: center;
+}
+
+#modalAptitudes .modal-content {
+    background: white;
+    width: 750px; /* Ancho especificado */
+    height: 600px; /* Alto especificado */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow-y: auto;
+    scrollbar-color: #4CAF50 #f1f1f1;
+
+}
+
+#modalAptitudes h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #228B22; /* Verde */
+}
+
+#modalAptitudes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#modalAptitudes li {
+    display: flex;
+    align-items: center;
+    background: #228B22; /* Fondo verde */
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 8px 0;
+}
+
+#modalAptitudes input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white; /* Contorno blanco */
+    border-radius: 3px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+#modalAptitudes input[type="checkbox"]:checked::after {
+    content: "✔";
+    font-size: 14px;
+    color: white;
+    position: absolute;
+}
+
+#modalAptitudes .close-modal {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+
+#modalAptitudes .close-modal:hover {
+    color: red;
+}
+
+
+/* ==============================
+   MODAL DE SOFTWARE
+================================= */
+
+
+#modalSoftware .modal-content {
+    position: relative;
+    overflow-x: auto; /* Permite scroll vertical en todo el contenido del modal */
+}
+
+.software-category {
+    position: relative;
+    width: 480px;
+    border: 2px solid #f4f4f4;
+    border-radius: 12px;
+    padding: 14px 10px 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #4CAF50 #f1f1f1;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow-x: auto; /* Permite scroll vertical dentro de cada categoría */
+}
+
+.software-category h1 {
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px 0;
+    color: white;
+    background: linear-gradient(to right, #4CAF50, #388E3C);
+    border-radius: 8px 8px 0 0;
+}
+
+.software-list {
+    display: flex;
+    gap: 15px;
+}
+
+.software-item {
+    display: flex;
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: center; /* Centra horizontalmente */
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 200px; /* Ancho máximo */
+}
+
+.software-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid #4CAF50;
+    object-fit: cover;
+    margin-bottom: 10px; /* Espacio entre imagen y texto */
+    transition: transform 0.3s ease-in-out;
+}
+
+.software-item img:hover {
+    transform: scale(1.1);
+}
+
+.software-item p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* ==============================
+   ESTILOS GENERALES HISTORIAL LABORAL
+================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap');
+
+#modalhistorialaboral.modal {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#modalhistorialaboral .modal-content {
+    display: flex;
+    background: linear-gradient(135deg, #3494E6, #EC6EAD);
+    width: 80%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    transform: perspective(1000px) rotateX(-10deg);
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.experience-text {
+    font-family: 'Space Grotesk', sans-serif;
+    display: block;
+    width: 100%;
+}
+
+.experience-text span {
+    display: block;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px) rotateX(-90deg);
+    animation: revealText 0.8s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.experience-text span:nth-child(1) {
+    animation-delay: 0.2s;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.experience-text span:nth-child(2) {
+    animation-delay: 0.4s;
+    font-size: 1.5rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.experience-text span:nth-child(3) {
+    animation-delay: 0.6s;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFD700;
+}
+
+@keyframes revealText {
+    to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+    }
+}
+
+#modalhistorialaboral .modal-content:hover {
+    transform: perspective(1000px) rotateX(0);
+    opacity: 1;
+}
+
+
+
+/* ==============================
+   PROYECTOS GIT HUT
+================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+#modalproyectosgit.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#modalproyectosgit.modal:target {
+    display: flex;
+}
+
+#modalproyectosgit .modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 2px solid #4ecdc4;
+}
+
+#modalproyectosgit .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    text-decoration: none;
+    color: #ff6b6b;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+}
+
+#modalproyectosgit .close-modal:hover {
+    transform: rotate(90deg);
+}
+
+#modalproyectosgit .project-notifications {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#modalproyectosgit .project-notification {
+    background-color: #228B22; /* Softer green background */ 
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#modalproyectosgit .project-notification:hover {
+    background-color: blue;
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(78, 205, 196, 0.2);
+}
+
+#modalproyectosgit .project-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #1a2b3c;
+    font-size: 1.5rem;
+}
+
+#modalproyectosgit .project-details {
+    flex-grow: 1;
+}
+
+#modalproyectosgit .project-name {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+#modalproyectosgit .project-description {
+    color: white;
+    font-size: 0.9rem;
+}
+
+#modalproyectosgit h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/* ==============================
+   PROYECTOS FROMACION
+================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+#modalformacion.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#modalformacion.modal:target {
+    display: flex;
+}
+
+#modalformacion .modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 2px solid #228B22;
+}
+
+#modalformacion .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    text-decoration: none;
+    color: #ff6b6b;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+}
+
+#modalformacion .close-modal:hover {
+    transform: rotate(90deg);
+}
+
+#modalformacion h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    background-color: #228B22;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#modalformacion .formation-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#modalformacion .formation-item {
+    background-color: #228B22;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+#modalformacion .formation-item-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    background-color: #228B22;
+    opacity: 0;
+}
+
+#modalformacion .formation-item .career {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    transition: all 0.4s ease;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#modalformacion .formation-item:hover {
+    height: 200px;
+}
+
+#modalformacion .formation-item:hover .career {
+    opacity: 0;
+}
+
+#modalformacion .formation-item:hover .formation-item-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#modalformacion .institute-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 100%;
+}
+
+#modalformacion .career {
+    font-size: 1rem;
+    text-align: center;
+}
+
+#modalformacion .type {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#modalformacion .year {
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
