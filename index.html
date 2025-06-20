@@ -3,307 +3,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../component/cv.css">
-    <title>Curriculum Vitae</title>
-    <script src="../component/cv.js"></script>
-    <style>
-        /* Additional container styling */
-        .main-container {
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 0 15px;
-            box-sizing: border-box;
-            position: relative;
-            min-height: 100vh;
-        }
-
-        .content-wrapper {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            position: relative;
-        }
-    </style>
+    <link rel="stylesheet" href="component/cv.css">
+    <title>Antonny Picalua - Data Analyst</title>
 </head>
 <body>
     <div class="main-container">
-        <div class="content-wrapper">
-            <div class="container">
-                <div class="parent">
-                    <div class="perfil">
-                        <img src="../component/image/perfil.webp" alt="Profile picture of Antonny Jose Picalua Florez">
-                    </div>
-                    <div class="descripcion_perfil">
-                        <span class="antonyPicalua">
-                            Antonny Jose Picalua Florez       
-                        </span>
-                        <span class="correo">
-                            <img src="../component/image/icons/gmail.webp" alt="Email" class="icon">
-                            josepicalua63@gmail.com
-                        </span>
-                        <span class="numero-telefono">
-                            <img src="../component/image/icons/whatsapp.webp" alt="WhatsApp Number" class="icon">
-                            +57 316 310 5530
-                        </span>
-                        <a href="https://github.com/JosePicalua" class="repositorio" target="_blank">
-                            <img src="../component/image/icons/github.webp" alt="Github Profile" class="icon">
-                            <span class="link-text">Github</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/AntonnyPicalua/" class="perfil-trabajo" target="_blank">
-                            <img src="../component/image/icons/linkedin.webp" alt="Linkedin Profile" class="icon">
-                            <span class="link-text">Linkedin</span>
-                        </a>
+        <!-- Header Section -->
+        <div class="header">
+            <div class="profile-section">
+                <img src="../component/image/perfil.webp" alt="Antonny Picalua" class="profile-image">
+                <div class="profile-info">
+                    <h1>Antonny Picalua</h1>
+                    <div class="title">Data Analyst - Scientist</div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <span>josepicalua63@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📱</span>
+                            <span>+57 316 310 5530</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <span>Bogotá, D.C., Colombia</span>
+                        </div>
+                        <div class="contact-item">
+                            <a href="https://github.com/JosePicalua" target="_blank">
+                                <span>🔗</span>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="https://www.linkedin.com/in/AntonnyPicalua/" target="_blank">
+                                <span>💼</span>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="hoja de vida limpia.pdf" target="_blank">
+                                <span>📰</span>
+                                <span>Curriculom</span>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="carta_presentation.pdf" target="_blank">
+                                <span>🔗</span>
+                                <span>Dear Hiring Manager</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="data_analytics_container">
-                    <span class="data_analitica_Data">
-                        <img src="../component/image/grafica.webp" alt="Data Graph" class="grafica">
-                        Data 
-                    </span>
-                    <span class="data_analitica_Analytics">
-                        Analytics - Science
-                    </span>
-                    <div class="global_idioma">
-                        <div class="language-details">
-                            <div class="language-name">Spanish</div>
-                            <div class="language-level">Native</div>
+            </div>
+            <div class="languages">
+                <div class="language-tag">Spanish - Native</div>
+                <div class="language-tag">English - Reading</div>
+                <div class="language-tag">Portuguese - Reading/Audio</div>
+                <div class="language-tag">French - Basic</div>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <!-- About Section -->
+            <div class="about-section">
+                <h2>Professional Summary</h2>
+                <p>Passionate and self-driven Data Analyst with strong foundations in data manipulation, statistical modeling, and data visualization. With hands-on experience in Python, SQL, and data preprocessing techniques, I have developed solid analytical thinking and a data-driven mindset. My recent projects focus on handling imbalanced datasets, conducting hypothesis testing, detecting fraud patterns, and generating dynamic reports for decision-making.</p>
+            </div>
+
+            <!-- Main Sections Grid -->
+            <div class="sections-grid">
+                <!-- Skills Section -->
+                <div class="section-card skills" data-modal="modalSkills">
+                    <h3>
+                        <div class="section-icon">💻</div>
+                        Technical Skills
+                    </h3>
+                    <div class="preview-content">
+                        <div class="skill-category">
+                            <strong>Programming:</strong> Python, SQL, R
                         </div>
-                        <div class="language-details">
-                            <div class="language-name">English</div>
-                            <div class="language-level">Reading</div>
+                        <div class="skill-category">
+                            <strong>Analytics:</strong> Statistical Testing, EDA, Machine Learning
                         </div>
-                        <div class="language-details">
-                            <div class="language-name">Portuguese</div>
-                            <div class="language-level">Reading and Audio</div>
+                        <div class="skill-category">
+                            <strong>Tools:</strong> Pandas, NumPy, Scikit-learn, PostgreSQL
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Section -->
+                <div class="section-card experience" data-modal="modalExperience">
+                    <h3>
+                        <div class="section-icon">💼</div>
+                        Professional Experience
+                    </h3>
+                    <div class="preview-content">
+                        <div class="experience-item">
+                            <div class="job-title">Data Analyst Projects</div>
+                            <div class="job-period">Dec 2024 – Present</div>
+                            <div class="job-description">Hands-on analytical projects and advanced data processing experience</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Section -->
+                <div class="section-card projects" data-modal="modalProjects">
+                    <h3>
+                        <div class="section-icon">🚀</div>
+                        Key Projects
+                    </h3>
+                    <div class="preview-content">
+                        <div class="project-item">
+                            <strong>Fraud Detection Analysis</strong> - Python, Scikit-learn
+                        </div>
+                        <div class="project-item">
+                            <strong>Statistical Testing E-commerce</strong> - A/B Testing
+                        </div>
+                        <div class="project-item">
+                            <strong>SQL Patient Data Analysis</strong> - PostgreSQL
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="section-card education" data-modal="modalEducation">
+                    <h3>
+                        <div class="section-icon">🎓</div>
+                        Education & Certifications
+                    </h3>
+                    <div class="preview-content">
+                        <div class="education-item">
+                            <strong>Python for Data Science</strong> - Platzi (2024)
+                        </div>
+                        <div class="education-item">
+                            <strong>PostgreSQL</strong> - Platzi (2024)
+                        </div>
+                        <div class="education-item">
+                            <strong>AWS Cloud Computing</strong> - Platzi (2024)
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="div_secciones">
-                <section>
-                    <div class="image_detalles">
-                        <div class="image_detalles">
-                            <span class="menu-text">SKILLS</span>
-                            <img src="../component/image/habilidades.webp" 
-                            alt="Skills Icon" 
-                            data-modal="modalAptitudes">                
-                        </div> 
-                        <div class="image_detalles">
-                            <span class="menu-text">SOFTWARE</span>
-                            <img src="../component/image/software.webp" 
-                            alt="Software Icon" 
-                            data-modal="modalSoftware">
-                        </div>   
-                        <div class="image_detalles">
-                            <span class="menu-text">GITHUB PROJECTS</span>
-                            <img src="../component/image/git.svg" 
-                            alt="Github Projects Icon"
-                            data-modal="modalproyectosgit">
-                        </div> 
-                        <div class="image_detalles">
-                            <span class="menu-text">EDUCATION</span>
-                            <img src="../component/image/education.webp" 
-                            alt="Education Icon"
-                            data-modal="modalformacion">
-                        </div>
-                        <div class="image_detalles">
-                            <span class="menu-text">WORK HISTORY</span>
-                            <img src="../component/image/work.webp" 
-                            alt="Work History Icon"
-                            data-modal="modalhistorialaboral">
-                        </div>
+            <!-- Hobbies Section -->
+            <div class="hobbies-section">
+                <h2>Interests & Hobbies</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-item">
+                        <div class="hobby-icon">📊</div>
+                        <div class="hobby-text">Data Storytelling</div>
                     </div>
-                </section>
+                    <div class="hobby-item">
+                        <div class="hobby-icon">🤖</div>
+                        <div class="hobby-text">AI & Machine Learning</div>
+                    </div>
+                    <div class="hobby-item">
+                        <div class="hobby-icon">🧩</div>
+                        <div class="hobby-text">Problem Solving</div>
+                    </div>
+                    <div class="hobby-item">
+                        <div class="hobby-icon">📚</div>
+                        <div class="hobby-text">Research & Reading</div>
+                    </div>
+                    <div class="hobby-item">
+                        <div class="hobby-icon">💪</div>
+                        <div class="hobby-text">Fitness & Wellness</div>
+                    </div>
+                    <div class="hobby-item">
+                        <div class="hobby-icon">🎓</div>
+                        <div class="hobby-text">Teaching & Mentoring</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Modals -->
-    <div id="modalAptitudes" class="modal">
+    <div id="modalSkills" class="modal">
         <div class="modal-content">
-            <a href="#" class="close-modal">✖</a>
-            <h2>SKILLS</h2>
-            <ul>
-                <li><input type="checkbox" checked disabled> Curiosity and Analytical Thinking</li>
-                <li><input type="checkbox" checked disabled> Attention to Detail</li>
-                <li><input type="checkbox" checked disabled> Solution-Oriented</li>
-                <li><input type="checkbox" checked disabled> Clear Communication</li>
-                <li><input type="checkbox" checked disabled> Patience and Persistence</li>
-                <li><input type="checkbox" checked disabled> Teamwork</li>
-                <li><input type="checkbox" checked disabled> Continuous Learning</li>
-                <li><input type="checkbox" checked disabled> Critical Thinking</li>
-                <li><input type="checkbox" checked disabled> Creativity</li>
-                <li><input type="checkbox" checked disabled> Self-Discipline</li>
-                <li><input type="checkbox" checked disabled> Tolerance for Uncertainty</li>
-                <li><input type="checkbox" checked disabled> Abstraction Capacity</li>
-                <li><input type="checkbox" checked disabled> Interest in Programming and Mathematics</li>
-            </ul>
-        </div>
-    </div>
+            <span class="close-modal">&times;</span>
+            <h2>Technical Skills</h2>
+            
+            <div class="skills-container">
+                <div class="skill-group">
+                    <h3>Data Analysis & Statistics</h3>
+                    <ul>
+                        <li>Exploratory Data Analysis (EDA)</li>
+                        <li>Statistical Testing (A/B Testing, Hypothesis Testing)</li>
+                        <li>Handling Imbalanced Datasets (SMOTE, undersampling)</li>
+                        <li>Outlier Detection & Missing Data Treatment</li>
+                        <li>Data Imputation (mean, median, mode)</li>
+                        <li>Feature Engineering & Selection</li>
+                        <li>Data Normalization & Encoding Techniques</li>
+                    </ul>
+                </div>
 
-    <div id="modalSoftware" class="modal">
-        <div class="modal-content">
-            <a href="#" class="close-modal">✖</a>
-            <h2>SOFTWARE</h2>
-    
-            <div class="software-category">
-                <h1>Languages</h1>
-                <div class="software-list">
-                    <div class="software-item">
-                        <img src="../component/image/logos/python.webp" alt="Python">
-                        <p>Python</p>
-                    </div>
-                    <div class="software-item">
-                        <img src="../component/image/logos/rstudio.jpg" alt="R Studio">
-                        <p>R Studio</p>
-                    </div>
-                    <div class="software-item">
-                        <img src="../component/image/logos/SQL.png" alt="SQL">
-                        <p>SQL</p>
-                    </div>
+                <div class="skill-group">
+                    <h3>Programming & Tools</h3>
+                    <ul>
+                        <li>Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)</li>
+                        <li>SQL (PostgreSQL, MySQL – joins, aggregations, filters)</li>
+                        <li>R Studio for statistical analysis</li>
+                        <li>Jupyter Notebooks for workflow development</li>
+                        <li>Microsoft Excel (Formulas, Pivot Tables)</li>
+                        <li>Git (basic version control)</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="software-category">
-                <h1>Visualizations</h1>
-                <div class="software-list">
-                    <div class="software-item">
-                        <img src="../component/image/logos/dahs.png" alt="Dash">
-                        <p>Dash</p>
-                    </div>
-                    <div class="software-item">
-                        <img src="../component/image/logos/powerbi.png" alt="Power Bi">
-                        <p>Power Bi</p>
-                    </div>
-                    <div class="software-item">
-                        <img src="../component/image/logos/Tableau.png" alt="Tableau">
-                        <p>Tableau</p>
-                    </div>
+
+                <div class="skill-group">
+                    <h3>Machine Learning</h3>
+                    <ul>
+                        <li>Classification Models (Logistic Regression, Decision Trees)</li>
+                        <li>Model Evaluation (Precision, Recall, F1-Score)</li>
+                        <li>Train/Test/Validation Splits</li>
+                        <li>Anomaly Detection and Fraud Analytics</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="software-category">
-                <h1>Cloud</h1>
-                <div class="software-list">
-                    <div class="software-item">
-                        <img src="../component/image/logos/aws.png" alt="Amazon Web Services">
-                        <p>Amazon Web Services</p>
-                    </div>
+
+                <div class="skill-group">
+                    <h3>Visualization & Cloud</h3>
+                    <ul>
+                        <li>Power BI & Tableau</li>
+                        <li>Dash for interactive dashboards</li>
+                        <li>Amazon Web Services (AWS)</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="modalproyectosgit" class="modal">
+    <div id="modalExperience" class="modal">
         <div class="modal-content">
-            <a href="#" class="close-modal">✖</a>
-            <h2>GITHUB PROJECTS</h2>
-            <ul class="project-notifications">
-                <li class="project-notification" onclick="window.open('https://github.com/JosePicalua/REGRESION-LINEAL-machine-learning', '_blank')">
-                    <div class="project-icon">🚀</div>
-                    <div class="project-details">
-                        <div class="project-name">Artificial Intelligence Project</div>
-                        <div class="project-description">Machine learning application for data analysis</div>
+            <span class="close-modal">&times;</span>
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-details">
+                <div class="job-entry">
+                    <div class="job-header">
+                        <h3>Data Analyst - Hands-on Projects</h3>
+                        <div class="job-meta">
+                            <span class="job-period">Dec 2024 – Present</span>
+                            <span class="job-location">Remote</span>
+                        </div>
                     </div>
-                </li>
-                <li class="project-notification" onclick="window.open('https://github.com/JosePicalua/wep-automatitation', '_blank')">
-                    <div class="project-icon">💻</div>
-                    <div class="project-details">
-                        <div class="project-name">Web Development Tool</div>
-                        <div class="project-description">Web development automation tool</div>
+                    
+                    <div class="job-responsibilities">
+                        <ul>
+                            <li>Conducted end-to-end data analysis using Python, including data wrangling with Pandas, NumPy, and creation of reusable preprocessing pipelines</li>
+                            <li>Managed and analyzed structured datasets from simulated healthcare, marketing, and operational domains</li>
+                            <li>Performed statistical testing (A/B testing, p-values, confidence intervals) to drive insights and support data-driven decisions</li>
+                            <li>Addressed imbalanced datasets using resampling techniques such as SMOTE and undersampling</li>
+                            <li>Developed exploratory data analysis (EDA) reports to detect patterns, anomalies, outliers, and trends</li>
+                            <li>Executed SQL queries on PostgreSQL and MySQL databases to extract, filter, and join tables</li>
+                            <li>Designed data cleaning workflows: removing duplicates, handling missing values via imputation</li>
+                            <li>Applied feature engineering techniques to improve model input quality</li>
+                            <li>Practiced machine learning models for classification tasks (e.g., fraud detection)</li>
+                            <li>Created mini case studies combining business understanding with technical implementation</li>
+                        </ul>
                     </div>
-                </li>
-                <li class="project-notification" onclick="window.open('https://github.com/JosePicalua/DataVisualizationDashboard', '_blank')">
-                    <div class="project-icon">🔍</div>
-                    <div class="project-details">
-                        <div class="project-name">Data Visualization Dashboard</div>
-                        <div class="project-description">Interactive dashboard for complex data visualization</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="modalformacion" class="modal">
-        <div class="modal-content">
-            <a href="#" class="close-modal">✖</a>
-            <h2>EDUCATION</h2>
-            <ul class="formation-list">
-                <li class="formation-item">
-                    <div class="career">Python for Data Science</div>
-                    <div class="formation-item-content">
-                        <div class="institute-name">Plazti Web SSO</div>
-                        <div class="type">Course</div>
-                        <div class="year">2024</div>
-                        <div class="year">Python for Data Science</div>
-                    </div>
-                </li>
-                <li class="formation-item">
-                    <div class="career">PostgreSQL</div>
-                    <div class="formation-item-content">
-                        <div class="institute-name">Plazti Web SSO</div>
-                        <div class="type">Course</div>
-                        <div class="year">2024</div>
-                        <div class="year">PostgreSQL</div>
-                    </div>
-                </li>
-                <li class="formation-item">
-                    <div class="career">Mathematics for Data Science: Descriptive Statistics</div>
-                    <div class="formation-item-content">
-                        <div class="institute-name">Plazti Web SSO</div>
-                        <div class="type">Course</div>
-                        <div class="year">2024</div>
-                        <div class="year">Mathematics for Data Science: Descriptive Statistics</div>
-                    </div>
-                </li>
-                <li class="formation-item">
-                    <div class="career">ETL and Data Ingestion with Python</div>
-                    <div class="formation-item-content">
-                        <div class="institute-name">Plazti Web SSO</div>
-                        <div class="type">Course</div>
-                        <div class="year">2024</div>
-                        <div class="year">ETL and Data Ingestion with Python</div>
-                    </div>
-                </li>
-                <li class="formation-item">
-                    <div class="career">Databases with SQL</div>
-                    <div class="formation-item-content">
-                        <div class="institute-name">Plazti Web SSO</div>
-                        <div class="type">Course</div>
-                        <div class="year">2024</div>
-                        <div class="year">Databases with SQL</div>
-                    </div>
-                </li>
-                <li class="formation-item">
-                    <div class="career">Data Visualization for BI</div>
-                    <div class="formation-item-content">
-                        <div class="institute-name">Plazti Web SSO</div>
-                        <div class="type">Course</div>
-                        <div class="year">2024</div>
-                        <div class="year">Data Visualization for BI</div>
-                    </div>
-                </li>
-                <li class="formation-item">
-                    <div class="career">AWS: Cloud Computing Fundamentals</div>
-                    <div class="formation-item-content">
-                        <div class="institute-name">Plazti Web SSO</div>
-                        <div class="type">Course</div>
-                        <div class="year">2024</div>
-                        <div class="year">AWS: Cloud Computing Fundamentals</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="modalhistorialaboral" class="modal">
-        <div class="modal-content">
-            <div class="experience-text">
-                <span>No Experience</span>
-                <span>But</span>
-                <span>Learning at 64 bits</span>
+                </div>
             </div>
         </div>
     </div>
+
+    <div id="modalProjects" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Key Projects</h2>
+            
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>📊 Imbalanced Dataset Analysis for Fraud Detection</h3>
+                        <div class="project-tech">Python, Pandas, Scikit-learn</div>
+                    </div>
+                    <div class="project-description">
+                        <p>Built a pipeline to detect fraudulent transactions in an imbalanced dataset using oversampling techniques (e.g., SMOTE). Performed EDA to uncover hidden patterns and trained classification models to distinguish legitimate from fraudulent records. Evaluated model performance using precision, recall, and F1-score to handle class imbalance effectively.</p>
+                    </div>
+                    <a href="https://github.com/JosePicalua/REGRESION-LINEAL-machine-learning" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🧪 Statistical Testing on E-commerce Campaigns</h3>
+                        <div class="project-tech">Python, NumPy, SciPy, Seaborn</div>
+                    </div>
+                    <div class="project-description">
+                        <p>Simulated A/B testing scenarios to analyze the effectiveness of digital marketing campaigns. Applied binomial distribution and hypothesis testing to validate business assumptions. Visualized the results to communicate findings clearly to non-technical stakeholders.</p>
+                    </div>
+                    <a href="https://github.com/JosePicalua/wep-automatitation" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🗃 SQL-Based Patient Data Analysis</h3>
+                        <div class="project-tech">PostgreSQL, MySQL</div>
+                    </div>
+                    <div class="project-description">
+                        <p>Designed and executed advanced SQL queries to extract, clean, and analyze patient data from relational databases. Applied aggregation, filtering, and CASE logic to generate customized reports and summaries. Used SQL joins and subqueries to correlate clinical observations across multiple tables.</p>
+                    </div>
+                    <a href="https://github.com/JosePicalua/DataVisualizationDashboard" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>📉 Data Cleaning & Preprocessing Framework</h3>
+                        <div class="project-tech">Python, Pandas</div>
+                    </div>
+                    <div class="project-description">
+                        <p>Created reusable functions to automate data cleaning, including null detection, duplicate removal, and feature scaling. Built a flexible script that detects outliers and imputes missing values based on column distribution. Prepared data for use in machine learning workflows with proper encoding and normalization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalEducation" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Education & Certifications</h2>
+            
+            <div class="education-container">
+                <div class="education-card">
+                    <h3>Python for Data Science</h3>
+                    <div class="education-details">
+                        <div class="institution">Platzi Web SSO</div>
+                        <div class="year">2024</div>
+                        <div class="type">Course</div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <h3>PostgreSQL</h3>
+                    <div class="education-details">
+                        <div class="institution">Platzi Web SSO</div>
+                        <div class="year">2024</div>
+                        <div class="type">Course</div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <h3>Mathematics for Data Science: Descriptive Statistics</h3>
+                    <div class="education-details">
+                        <div class="institution">Platzi Web SSO</div>
+                        <div class="year">2024</div>
+                        <div class="type">Course</div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <h3>ETL and Data Ingestion with Python</h3>
+                    <div class="education-details">
+                        <div class="institution">Platzi Web SSO</div>
+                        <div class="year">2024</div>
+                        <div class="type">Course</div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <h3>Databases with SQL</h3>
+                    <div class="education-details">
+                        <div class="institution">Platzi Web SSO</div>
+                        <div class="year">2024</div>
+                        <div class="type">Course</div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <h3>Data Visualization for BI</h3>
+                    <div class="education-details">
+                        <div class="institution">Platzi Web SSO</div>
+                        <div class="year">2024</div>
+                        <div class="type">Course</div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <h3>AWS: Cloud Computing Fundamentals</h3>
+                    <div class="education-details">
+                        <div class="institution">Platzi Web SSO</div>
+                        <div class="year">2024</div>
+                        <div class="type">Course</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script></script>
+    <script src="component/cv.js"></script>
+
+
 </body>
 </html>
