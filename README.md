@@ -1,25 +1,68 @@
-Antonny
-josepicalua64@gmail.com
-+57 350 424 1139
-Bogotá D.C., Colombia
-June 20, 2025
+👋 Hi, and thank you for visiting my profile!
 
-Hiring Manager
+📫 Contact:
+josepicalua63@gmail.com | 📱 +57 350 4241139 | WhatsApp: +57 316 3105530
+📄 CV: [https://josepicalua.github.io]
+🐙 GitHub: [https://github.com/JosePicalua]
 
-Dear Hiring Manager,
+🧠 Data Scientist | Applied Statistics | Machine Learning for Real-World Impact
+I specialize in applied data science, with strong expertise in statistical inference, predictive modeling, and machine learning techniques to solve real-world business problems. My focus is on building robust and scalable models that generate insights, detect anomalies, and support evidence-based decision-making.
 
-I am excited to express my interest in a Data Analyst role within your organization. As a dedicated and self-driven data professional with strong practical experience in Python, SQL, and statistical analysis, I bring a solid analytical mindset and the ability to extract valuable insights from complex datasets.
+🎯 Core Technical Competencies
+📊 Applied Statistics & Inference
+Hypothesis testing (t-tests, ANOVA, Chi-square)
 
-Over the last several months, I have developed and executed independent projects that mirror real-world challenges in data analysis. These include fraud detection using imbalanced datasets and machine learning models, e-commerce A/B testing with statistical validation, and SQL-based reporting on patient and operational data. My technical expertise includes tools like Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib, and PostgreSQL.
+Confidence intervals & significance levels
 
-I have built data cleaning frameworks to handle missing values, detect outliers, and normalize features for machine learning pipelines. I’ve also conducted hypothesis testing, explored binomial distributions, and implemented feature engineering strategies to improve model outcomes.
+Probabilistic modeling & experimental design
 
-My approach is structured yet creative: I enjoy not only solving data problems but also presenting the results clearly through storytelling and visualization. I am eager to bring this skillset to a forward-thinking team that values data-driven decisions and continuous improvement.
+Outlier detection & distribution fitting
 
-Thank you for considering my application. I look forward to the opportunity to discuss how my experience and motivation can support your team’s data initiatives. Please find my resume attached.
+🤖 Machine Learning & Predictive Modeling
+Supervised learning (classification, regression, evaluation metrics)
 
-Sincerely,
-Antonny
-josepicalua64@gmail.com
-+57 350 424 1139
-Bogotá D.C., Colombia
+Unsupervised learning (clustering, dimensionality reduction)
+
+Cross-validation, ROC, precision/recall optimization
+
+Anomaly detection & fraud modeling
+
+Time series forecasting & temporal decomposition
+
+⚙️ Data Engineering & Automation
+Automated EDA pipelines & scalable ML workflows
+
+Custom preprocessing & feature engineering
+
+Integration with SQL databases and API endpoints
+
+💾 Databases & Querying
+PostgreSQL (PL/pgSQL, CTEs, window functions)
+
+Advanced SQL: pattern extraction, nested queries, temporal joins
+
+Data cleaning, normalization, and performance optimization
+
+💻 Python Ecosystem
+Pandas, NumPy, Scikit-learn, Statsmodels, TensorFlow (basic)
+
+Environments: JupyterLab, VS Code, Anaconda
+
+Git & GitHub | Deployment-ready code | Shell scripting basics
+
+📚 Technical Documentation & Research
+Full-cycle documentation of research findings, models, and methodologies
+
+Executive summaries with analytical insights
+
+Collaboration with cross-functional teams for data-driven projects
+
+🌍 Language Competencies
+🇪🇸 Spanish: Native
+
+🇺🇸 English: C1 (Advanced)
+
+🇧🇷 Portuguese: C1 (Advanced)
+
+💡 My Value Proposition
+I combine deep statistical knowledge with a pragmatic machine learning approach to deliver robust, explainable, and scalable models. My work centers on real-world datasets and data-driven strategies that create tangible value — from automating analysis to anticipating risks and optimizing outcomes.
