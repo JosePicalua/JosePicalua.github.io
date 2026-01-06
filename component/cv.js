@@ -258,6 +258,36 @@ window.onclick = function(event) {
     }
 }
 
+document.getElementById('openSegundoProyecto').addEventListener('click', function(e) {
+    e.preventDefault(); // Evita que abra el enlace
+    
+    // IMPORTANTE: Cambia la ruta absoluta por una relativa para que funcione en el navegador
+    const rutaArchivo = 'component/pages/geografico.html'; 
+    
+    const modal = document.getElementById('myModal');
+    const iframe = document.getElementById('modalFrame');
+    
+    iframe.src = rutaArchivo;
+    modal.style.display = 'block';
+});
+
+// Cerrar el modal al hacer clic en la (X)
+document.getElementById('closeModal').onclick = function() {
+    document.getElementById('myModal').style.display = 'none';
+    document.getElementById('modalFrame').src = ''; // Limpia el contenido
+}
+
+// Cerrar si hacen clic fuera del recuadro blanco
+window.onclick = function(event) {
+    const modal = document.getElementById('myModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+
+
+
+
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////7
@@ -625,3 +655,5 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 });
+
+

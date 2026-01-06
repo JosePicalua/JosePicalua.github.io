@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiografía de la Movilidad en NYC - Análisis Uber 2014</title>
+    <link rel="stylesheet" href="component/css/geografico.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Radiografía de la Movilidad en NYC</h1>
+            <h2 style="margin: 15px 0; opacity: 0.9;">Análisis de Uber 2014</h2>
+            <p>¿Cómo se mueve una de las ciudades más complejas del mundo? Recientemente finalicé un análisis profundo del dataset de Uber Pickups en New York City, procesando más de 4.5 millones de registros para entender los patrones de demanda, geografía y competencia de mercado.</p>
+        </header>
+
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="slide active">
+                        <div class="slide-image" style="background-image: url('./component/img/MANJATAS_1.png');"></div>
+                        <div class="slide-content">
+                            <h3>🗺️ Nodos de Poder (Hotspots)</h3>
+                            <p>Aunque Manhattan es el corazón del tráfico, el análisis de coordenadas reveló que los epicentros de mayor densidad individual son los aeropuertos: JFK (punto #1), LaGuardia y Newark.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-image" style="background-image: url('./component/img/ENVOLUCION_2.png');"></div>
+                        <div class="slide-content">
+                            <h3>📈 Crecimiento Exponencial</h3>
+                            <p>Uber duplicó su operación en apenas 6 meses, pasando de ~560k viajes en abril a más de 1 millón de viajes mensuales en septiembre.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-image" style="background-image: url('./component/img/HORA_PICO_3.png');"></div>
+                        <div class="slide-content">
+                            <h3>⏰ Dinámica de "Hora Pico"</h3>
+                            <p>La demanda es bimodal y altamente predecible. El pico máximo ocurre invariablemente a las 17:00 (5 PM), coincidiendo con la salida laboral, mientras que el punto más bajo de la ciudad es a las 2:00 AM.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn" onclick="prevSlide()">‹</button>
+                    <button class="carousel-btn" onclick="nextSlide()">›</button>
+                </div>
+
+                <div class="carousel-indicators">
+                    <button class="indicator active" onclick="goToSlide(0)"></button>
+                    <button class="indicator" onclick="goToSlide(1)"></button>
+                    <button class="indicator" onclick="goToSlide(2)"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="findings-section">
+            <h2>🔍 Hallazgos Principales</h2>
+            <div class="findings-grid">
+                <div class="finding-card">
+                    <h3>📈 Crecimiento Exponencial</h3>
+                    <p>Uber duplicó su operación en apenas 6 meses, pasando de ~560k viajes en abril a más de 1 millón de viajes mensuales en septiembre.</p>
+                </div>
+
+                <div class="finding-card">
+                    <h3>🗺️ Nodos de Poder</h3>
+                    <p>Aunque Manhattan es el corazón del tráfico, el análisis de coordenadas reveló que los epicentros de mayor densidad individual son los aeropuertos: JFK (punto #1), LaGuardia y Newark.</p>
+                </div>
+
+                <div class="finding-card">
+                    <h3>⏰ Hora Pico</h3>
+                    <p>La demanda es bimodal y altamente predecible. El pico máximo ocurre invariablemente a las 17:00 (5 PM), coincidiendo con la salida laboral, mientras que el punto más bajo es a las 2:00 AM.</p>
+                </div>
+
+                <div class="finding-card">
+                    <h3>🏢 Guerra de Bases</h3>
+                    <p>El liderazgo del mercado fue volátil. La base B02682 inició dominando en abril, pero fue superada por B02617, que se consolidó como líder absoluto durante todo el verano (julio-septiembre).</p>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <h2>🛠️ Stack Tecnológico</h2>
+                <ul class="tech-list">
+                    <li><strong>Python (Pandas)</strong> para la limpieza y fusión de grandes volúmenes de datos (df_merge).</li>
+                    <li><strong>Matplotlib & Seaborn</strong> para el análisis de tendencias temporales y rendimiento por base.</li>
+                    <li><strong>Análisis Geoespacial:</strong> Identificación de centros geográficos y visualización de densidades mediante coordenadas de latitud y longitud.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="conclusion">
+            <h2>💡 Conclusión</h2>
+            <p>Este análisis demuestra que en 2014, Uber no era solo una alternativa de transporte, sino una herramienta logística crítica que conectaba los hubs de transporte (aeropuertos) con los centros financieros de Manhattan, adaptándose milimétricamente al pulso de la ciudad.</p>
+            <p style="margin-top: 20px; font-size: 1.2em; opacity: 0.9;">#DataAnalysis #Python #DataScience #Uber #BigData #GeospatialAnalysis #NYC</p>
+        </section>
+    </div>
+
+<script src="component/js/geografico.js"></script>
+</body>
+</html>
