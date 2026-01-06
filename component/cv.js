@@ -229,3 +229,399 @@ const printButton = document.querySelector('[data-action="print"]');
 if (printButton) {
     printButton.addEventListener('click', printCV);
 }
+
+
+document.getElementById('openModal').addEventListener('click', function(e) {
+    e.preventDefault(); // Evita que abra el enlace
+    
+    // IMPORTANTE: Cambia la ruta absoluta por una relativa para que funcione en el navegador
+    const rutaArchivo = 'component/pages/analisis.html'; 
+    
+    const modal = document.getElementById('myModal');
+    const iframe = document.getElementById('modalFrame');
+    
+    iframe.src = rutaArchivo;
+    modal.style.display = 'block';
+});
+
+// Cerrar el modal al hacer clic en la (X)
+document.getElementById('closeModal').onclick = function() {
+    document.getElementById('myModal').style.display = 'none';
+    document.getElementById('modalFrame').src = ''; // Limpia el contenido
+}
+
+// Cerrar si hacen clic fuera del recuadro blanco
+window.onclick = function(event) {
+    const modal = document.getElementById('myModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////7
+
+// JavaScript para modal expandible
+document.addEventListener('DOMContentLoaded', function() {
+    const summary = document.querySelector('.summary');
+    
+    // Crear el modal
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.innerHTML = `
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sobre Mí</h2>
+            <p class="modal-text"></p>
+        </div>
+    `;
+    document.body.appendChild(modal);
+    
+    const modalText = modal.querySelector('.modal-text');
+    const closeBtn = modal.querySelector('.close');
+    
+    // Limitar altura del summary
+    summary.style.maxHeight = '150px';
+    summary.style.overflow = 'hidden';
+    summary.style.cursor = 'pointer';
+    summary.style.position = 'relative';
+    
+    // Verificar si el contenido desborda
+    if (summary.scrollHeight > summary.clientHeight) {
+        summary.style.paddingBottom = '30px';
+        summary.title = 'Click para leer más';
+        
+        // Agregar indicador de "leer más"
+        const readMore = document.createElement('div');
+        readMore.className = 'read-more';
+        readMore.textContent = 'Leer más...';
+        readMore.style.cssText = `
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(to right, transparent, white 20%);
+            padding: 5px 10px 5px 40px;
+            color: #667eea;
+            font-weight: 600;
+            cursor: pointer;
+        `;
+        summary.style.position = 'relative';
+        summary.appendChild(readMore);
+    }
+    
+    // Abrir modal
+    summary.addEventListener('click', function() {
+        modalText.textContent = summary.textContent.replace('Leer más...', '').trim();
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    });
+    
+    // Cerrar modal
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+    
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // CSS para el modal
+    const style = document.createElement('style');
+    style.textContent = `
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 800px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+            animation: slideUp 0.3s;
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .modal-content h2 {
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        
+        .modal-text {
+            color: #4a5568;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #718096;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        
+        .close:hover {
+            color: #2d3748;
+        }
+    `;
+    document.head.appendChild(style);
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////7
+// JavaScript para modal con scroll interno
+document.addEventListener('DOMContentLoaded', function() {
+    const cardContents = document.querySelectorAll('.card-content');
+    
+    // Crear el modal (solo una vez)
+    const modal = document.createElement('div');
+    modal.className = 'modal-card';
+    modal.innerHTML = `
+        <div class="modal-card-content">
+            <span class="close-card">&times;</span>
+            <div class="modal-card-body"></div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+    
+    const modalBody = modal.querySelector('.modal-card-body');
+    const closeBtn = modal.querySelector('.close-card');
+    
+    cardContents.forEach(card => {
+        // Limitar altura del card
+        card.style.maxHeight = '250px';
+        card.style.overflow = 'hidden';
+        card.style.cursor = 'pointer';
+        card.style.position = 'relative';
+        card.style.transition = 'all 0.3s ease';
+        
+        // Verificar si el contenido desborda
+        if (card.scrollHeight > card.clientHeight) {
+            card.title = 'Click para ver más';
+            
+            // Agregar overlay de gradiente
+            const overlay = document.createElement('div');
+            overlay.className = 'card-overlay';
+            overlay.innerHTML = '<span>Ver más...</span>';
+            overlay.style.cssText = `
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 60px;
+                background: linear-gradient(to bottom, transparent, white);
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                padding-bottom: 10px;
+                pointer-events: none;
+            `;
+            overlay.querySelector('span').style.cssText = `
+                color: #667eea;
+                font-weight: 600;
+                font-size: 0.9em;
+            `;
+            card.appendChild(overlay);
+        }
+        
+        // Abrir modal al hacer click
+        card.addEventListener('click', function(e) {
+            // Clonar el contenido sin el overlay
+            const clone = card.cloneNode(true);
+            const overlayToRemove = clone.querySelector('.card-overlay');
+            if (overlayToRemove) {
+                overlayToRemove.remove();
+            }
+            
+            modalBody.innerHTML = clone.innerHTML;
+            modalBody.scrollTop = 0; // Resetear scroll
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+        
+        // Efecto hover
+        card.addEventListener('mouseenter', function() {
+            if (this.scrollHeight > this.clientHeight) {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.15)';
+            }
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '';
+        });
+    });
+    
+    // Cerrar modal
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+    
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // Cerrar con tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.style.display === 'flex') {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // CSS para el modal con altura fija y scroll
+    const style = document.createElement('style');
+    style.textContent = `
+        .modal-card {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .modal-card-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 900px;
+            width: 90%;
+            height: 600px;
+            max-height: 80vh;
+            position: relative;
+            animation: slideUp 0.3s;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .modal-card-body {
+            color: #4a5568;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 15px;
+            flex: 1;
+        }
+        
+        /* Scrollbar personalizado */
+        .modal-card-body::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        .modal-card-body::-webkit-scrollbar-track {
+            background: #f7fafc;
+            border-radius: 10px;
+        }
+        
+        .modal-card-body::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 10px;
+            border: 3px solid #f7fafc;
+        }
+        
+        .modal-card-body::-webkit-scrollbar-thumb:hover {
+            background: #5568d3;
+        }
+        
+        /* Firefox */
+        .modal-card-body {
+            scrollbar-width: thin;
+            scrollbar-color: #667eea #f7fafc;
+        }
+        
+        .modal-card-body ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .modal-card-body li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .close-card {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #718096;
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 1;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        
+        .close-card:hover {
+            color: white;
+            background: #667eea;
+            transform: rotate(90deg);
+        }
+        
+        @media (max-width: 768px) {
+            .modal-card-content {
+                width: 95%;
+                height: 500px;
+                padding: 30px 20px;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+});

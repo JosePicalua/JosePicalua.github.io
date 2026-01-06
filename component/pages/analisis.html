@@ -1,0 +1,388 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Comportamiento Crediticio: 5 Pilares</title>
+    <link rel="stylesheet" href="./component/css/analisis.css">
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <div class="slides-container" id="slidesContainer">
+                
+                <!-- Slide 1: Portada -->
+                <div class="slide slide-intro">
+                    <h1>📊 Análisis de Comportamiento Crediticio</h1>
+                    <p>5 Pilares para Predecir el Riesgo de Mora</p>
+                    <p class="subtitle">Un análisis integral de 360° basado en datos de más de 300,000 clientes</p>
+                    <div style="margin-top: 50px;">
+                        <div class="pilar-badge">✨ Demografía</div>
+                        <div class="pilar-badge">💰 Ingresos</div>
+                        <div class="pilar-badge">⚡ Estabilidad</div>
+                        <div class="pilar-badge">🏠 Activos</div>
+                        <div class="pilar-badge">⏱️ Tiempo</div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Introducción -->
+                <div class="slide slide-content">
+                    <span class="pilar-badge" style="background: #667eea; color: white;">Introducción</span>
+                    <h2>¿Por qué 5 Pilares?</h2>
+                    <div class="insight-box">
+                        <h4>🎯 Enfoque Holístico</h4>
+                        <p>El riesgo crediticio no se puede predecir con una sola variable. Hemos construido un modelo multidimensional que evalúa:</p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">1</div>
+                            <div class="stat-label">Demografía<br>¿Quién es?</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Ingresos<br>¿Qué capacidad?</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Estabilidad<br>¿Qué seguridad?</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">Activos<br>¿Qué respaldo?</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Tiempo<br>¿Cómo evoluciona?</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Pilar 1 - Demografía -->
+                <div class="slide slide-content">
+                    <span class="pilar-badge" style="background: #667eea; color: white;">Pilar 1</span>
+                    <h2>👥 Demografía y Comportamiento</h2>
+                    
+                    <div class="key-findings">
+                        <h4>🔍 Hallazgos Clave</h4>
+                        <p><span class="highlight">Edad Óptima:</span> El rango 35-45 años concentra el mayor volumen de clientes con STATUS 'C' (pago correcto)</p>
+                        <p><span class="highlight">Familia Nuclear:</span> 2 miembros familiares = perfil más estable (mayor frecuencia de buenos pagadores)</p>
+                        <p><span class="highlight">Exclusión en Extremos:</span> Jóvenes <25 años y adultos >70 años están subrepresentados</p>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">35-45</div>
+                            <div class="stat-label">Edad de oro crediticia</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Miembros familiares ideales</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">↓</div>
+                            <div class="stat-label">Mora en edades avanzadas</div>
+                        </div>
+                    </div>
+
+                    <div class="conclusion-box">
+                        <h4>💡 Conclusión Pilar 1</h4>
+                        <ul>
+                            <li>Edad madura (35-45) + familia pequeña (2-3) = predictor fuerte de buen comportamiento</li>
+                            <li>Familias numerosas (>5 miembros) tienen exclusión financiera</li>
+                            <li>La madurez crediticia se alcanza entre los 35-45 años</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Pilar 2 - Ingresos -->
+                <div class="slide slide-content">
+                    <span class="pilar-badge" style="background: #667eea; color: white;">Pilar 2</span>
+                    <h2>💰 Ingresos y Capacidad de Pago</h2>
+                    
+                    <div class="key-findings">
+                        <h4>🔍 Hallazgos Clave</h4>
+                        <p><span class="highlight">Empleados Formales Dominan:</span> "Working" representa >50% del portafolio con ~170,000 clientes en STATUS 'C'</p>
+                        <p><span class="highlight">Pensionados = Oro:</span> Menor riesgo crediticio, mora severa prácticamente inexistente</p>
+                        <p><span class="highlight">Paradoja del Ingreso:</span> STATUS 'C', 'X' y '0' tienen distribuciones de ingreso IDÉNTICAS</p>
+                    </div>
+
+                    <div class="insight-box">
+                        <h4>⚠️ Insight Sorprendente</h4>
+                        <p>El <strong>monto de ingreso NO es predictor absoluto</strong>. La mora temprana (STATUS '1') no correlaciona con ingresos bajos, pero la mora crónica (STATUS '2'-'5') SÍ.</p>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">170K</div>
+                            <div class="stat-label">Empleados "Working"</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">~1%</div>
+                            <div class="stat-label">Mora de pensionados</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">0</div>
+                            <div class="stat-label">Estudiantes con crédito</div>
+                        </div>
+                    </div>
+
+                    <div class="conclusion-box">
+                        <h4>💡 Conclusión Pilar 2</h4>
+                        <ul>
+                            <li>Estabilidad laboral > Monto de ingreso</li>
+                            <li>Mora de 1 mes puede ser circunstancial, 2+ meses es estructural</li>
+                            <li>Alto ingreso NO garantiza buen crédito (outliers en mora severa)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 5: Pilar 3 - Estabilidad -->
+                <div class="slide slide-content">
+                    <span class="pilar-badge" style="background: #667eea; color: white;">Pilar 3</span>
+                    <h2>⚡ Estabilidad Laboral</h2>
+                    
+                    <div class="key-findings">
+                        <h4>🔍 Hallazgos Clave</h4>
+                        <p><span class="highlight">La Regla de los 5 Años:</span> Antigüedad laboral de 5+ años es punto de inflexión crítico</p>
+                        <p><span class="highlight">Junior = Alta Volatilidad:</span> 0-2 años de antigüedad muestran tasa de mora hasta 3.2%</p>
+                        <p><span class="highlight">Senior = Blindaje:</span> 10+ años mantienen mora consistente 1-2%</p>
+                    </div>
+
+                    <div class="insight-box">
+                        <h4>📊 Datos Impactantes</h4>
+                        <p>Durante períodos de crisis (meses -40 a -50), la brecha de mora entre junior y senior se <strong>triplica</strong>. Los empleados junior son los primeros en sufrir shocks económicos.</p>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Años = Estabilidad</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3.2%</div>
+                            <div class="stat-label">Mora máxima Junior</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">1-2%</div>
+                            <div class="stat-label">Mora Senior estable</div>
+                        </div>
+                    </div>
+
+                    <div class="conclusion-box">
+                        <h4>💡 Conclusión Pilar 3</h4>
+                        <ul>
+                            <li>Antigüedad laboral es amortiguador crítico ante crisis</li>
+                            <li>Empleados <2 años: scoring estricto, límites bajos</li>
+                            <li>Empleados 10+ años: candidatos premium</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 6: Pilar 4 - Activos -->
+                <div class="slide slide-content">
+                    <span class="pilar-badge" style="background: #667eea; color: white;">Pilar 4</span>
+                    <h2>🏠 Activos y Garantías</h2>
+                    
+                    <div class="key-findings">
+                        <h4>🔍 Hallazgo Controversial</h4>
+                        <p><span class="highlight">Mito Roto:</span> La posesión de auto y vivienda muestra impacto MÍNIMO en comportamiento crediticio</p>
+                        <p><span class="highlight">Diferencia Marginal:</span> Tener 0 activos vs 2 activos = solo 0.2-0.3% menos mora</p>
+                    </div>
+
+                    <div class="insight-box">
+                        <h4>⚡ Insight Revolucionario</h4>
+                        <p>El grupo <strong>sin auto ni casa</strong> muestra 42.5% en STATUS 'C' - el MÁS ALTO. Los activos NO predicen el comportamiento de pago.</p>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">-13%</div>
+                            <div class="stat-label">Reducción mora con vivienda</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">-6%</div>
+                            <div class="stat-label">Reducción mora con auto</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">98%+</div>
+                            <div class="stat-label">Clientes al día (todos)</div>
+                        </div>
+                    </div>
+
+                    <div class="conclusion-box">
+                        <h4>💡 Conclusión Pilar 4</h4>
+                        <ul>
+                            <li>Flujo de caja > Stock de activos como predictor</li>
+                            <li>No discriminar automáticamente a quienes no tienen activos</li>
+                            <li>Vivienda tiene 2x más impacto que auto (pero aún modesto)</li>
+                            <li>Capacidad de pago mensual supera al patrimonio acumulado</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 7: Pilar 5 - Tiempo -->
+                <div class="slide slide-content">
+                    <span class="pilar-badge" style="background: #667eea; color: white;">Pilar 5</span>
+                    <h2>⏱️ Evolución Temporal</h2>
+                    
+                    <div class="key-findings">
+                        <h4>🔍 Hallazgos Clave</h4>
+                        <p><span class="highlight">Regla de los 30 Meses:</span> Créditos que superan 30 meses tienen >95% probabilidad de mantenerse al día</p>
+                        <p><span class="highlight">Juventud + Novedad = Riesgo:</span> <25 años + crédito nuevo = 5-6% mora (3-4x el promedio)</p>
+                        <p><span class="highlight">Maduración del Portafolio:</span> STATUS '0' migró de 70% a 28%, STATUS 'C' creció a ~50%</p>
+                    </div>
+
+                    <div class="insight-box">
+                        <h4>🎯 Ventana Crítica</h4>
+                        <p>Los <strong>primeros 30 meses</strong> son determinantes. Después, el riesgo se estabiliza dramáticamente independientemente de otras variables.</p>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">30</div>
+                            <div class="stat-label">Meses críticos</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">5-6%</div>
+                            <div class="stat-label">Mora jóvenes nuevos</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">95%+</div>
+                            <div class="stat-label">Buenos pagadores 30m+</div>
+                        </div>
+                    </div>
+
+                    <div class="conclusion-box">
+                        <h4>💡 Conclusión Pilar 5</h4>
+                        <ul>
+                            <li>Tiempo de historia > Edad como predictor</li>
+                            <li>Primeros 12 meses: monitoreo intensivo obligatorio</li>
+                            <li>"Supervivencia del más apto" purga malos pagadores</li>
+                            <li>Shocks económicos afectan 2-3x más a jóvenes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 8: Perfiles de Riesgo -->
+                <div class="slide slide-content">
+                    <span class="pilar-badge" style="background: #667eea; color: white;">Síntesis</span>
+                    <h2>🎯 Perfiles de Riesgo Definidos</h2>
+                    
+                    <div class="risk-profile">
+                        <div class="profile-card low-risk">
+                            <h4>✅ Perfil de MÍNIMO Riesgo</h4>
+                            <ul>
+                                <li><strong>Edad:</strong> 35-55 años</li>
+                                <li><strong>Familia:</strong> 2-3 miembros</li>
+                                <li><strong>Ingreso:</strong> Empleado formal o pensionado</li>
+                                <li><strong>Antigüedad:</strong> 5+ años</li>
+                                <li><strong>Tiempo:</strong> 30+ meses sin mora</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="profile-card high-risk">
+                            <h4>⚠️ Perfil de MÁXIMO Riesgo</h4>
+                            <ul>
+                                <li><strong>Edad:</strong> < 25 años</li>
+                                <li><strong>Familia:</strong> 1 o 5+ miembros</li>
+                                <li><strong>Ingreso:</strong> Comerciante/informal</li>
+                                <li><strong>Antigüedad:</strong> < 2 años</li>
+                                <li><strong>Tiempo:</strong> 0-12 meses</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="insight-box">
+                        <h4>📈 Tasa de Mora Comparativa</h4>
+                        <p><span class="highlight">Perfil Mínimo Riesgo:</span> ~1.0-1.5% de mora</p>
+                        <p><span class="highlight">Perfil Máximo Riesgo:</span> ~5-6% de mora</p>
+                        <p><strong>Diferencial de riesgo: 4-5x</strong></p>
+                    </div>
+                </div>
+
+                <!-- Slide 9: Jerarquía de Predictores -->
+                <div class="slide slide-content">
+                    <span class="pilar-badge" style="background: #667eea; color: white;">Ranking</span>
+                    <h2>🏆 Jerarquía de Predictores</h2>
+                    <p style="font-size: 1.1rem; color: #4a5568; margin-bottom: 30px;">
+                        De mayor a menor poder predictivo del riesgo crediticio
+                    </p>
+                    
+                    <ol class="hierarchy-list">
+                        <li>
+                            <strong>Tiempo de historia crediticia</strong><br>
+                            <span style="color: #667eea;">30+ meses = blindaje absoluto</span>
+                        </li>
+                        <li>
+                            <strong>Antigüedad laboral</strong><br>
+                            <span style="color: #667eea;">5+ años = estabilidad comprobada</span>
+                        </li>
+                        <li>
+                            <strong>Tipo de ingreso</strong><br>
+                            <span style="color: #667eea;">Formal > Informal | Pensionado = oro</span>
+                        </li>
+                        <li>
+                        <strong>Edad</strong><br>
+                        <span style="color: #667eea;">35-55 años = rango óptimo</span>
+                        </li>
+                        <li>
+                        <strong>Composición familiar</strong><br>
+                        <span style="color: #667eea;">2-3 miembros = perfil ideal</span>
+                        </li>
+                        <li>
+                        <strong>Activos tangibles</strong><br>
+                        <span style="color: #667eea;">Impacto marginal < 0.3%</span>
+                        </li>
+                        </ol>
+                        </div>
+                        <!-- Slide 10: Conclusiones Finales -->
+                    <div class="slide slide-intro">
+                        <span class="pilar-badge">Conclusiones</span>
+                        <h1>🎯 Insights Accionables</h1>
+                        
+                        <div class="conclusion-box" style="text-align: left; max-width: 900px; margin: 40px auto;">
+                            <h4>🚀 Recomendaciones Estratégicas</h4>
+                            <ul>
+                                <li><strong>Scoring Dinámico:</strong> Ajustar pesos según jerarquía de predictores</li>
+                                <li><strong>Monitoreo Intensivo:</strong> Primeros 12 meses con alertas automáticas</li>
+                                <li><strong>Segmentación Premium:</strong> Empleados 10+ años + 30+ meses historia</li>
+                                <li><strong>Inclusión Inteligente:</strong> No discriminar por falta de activos</li>
+                                <li><strong>Pricing Diferenciado:</strong> Basado en tiempo de historia, no solo en ingresos</li>
+                            </ul>
+                        </div>
+
+                        <div class="stats-grid" style="margin-top: 40px;">
+                            <div class="stat-card">
+                                <div class="stat-number">360°</div>
+                                <div class="stat-label">Análisis integral</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">5</div>
+                                <div class="stat-label">Pilares validados</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">300K+</div>
+                                <div class="stat-label">Clientes analizados</div>
+                            </div>
+                        </div>
+
+                        <p class="subtitle" style="margin-top: 50px;">
+                            💡 El riesgo crediticio es multifactorial: tiempo + estabilidad > patrimonio
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Navigation -->
+                <div class="navigation">
+                    <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">← Anterior</button>
+                    <div class="slide-indicator" id="indicators">
+                        <!-- Dots will be generated by JS -->
+                    </div>
+                    <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">Siguiente →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./component/js/analisis.js"></script>
+    </body>
+</html>
